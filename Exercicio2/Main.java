@@ -25,6 +25,8 @@ public class Main {
 
         pessoa.informaObesidade();
 
+        scanner.close();
+
     }
 
 }
