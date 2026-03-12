@@ -1,4 +1,4 @@
-package Exercicio11;
+package Exercicio1;
 import java.math.*;
 
 public class triangulo {
