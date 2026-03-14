@@ -18,10 +18,10 @@ public class main {
         for (int i = 0; i < pessoa.length; i++) {
             System.out.println("Informe o nome e sobrenome da pessoa: ");
             nome = scanner.nextLine();
-            sobrenome = scanner.nextLine();
             if (i > 0 && pessoa[i - 1].getNome().equals(nome)) {
                 break;
             }
+            sobrenome = scanner.nextLine();
             System.out.println("Informe a idade da pessoa: ");
             idade = scanner.nextInt();
             System.out.println("Informe a data de nascimento da pessoa: (Dia Mes Ano) ");
@@ -38,12 +38,11 @@ public class main {
         for (int i = 0; i < pessoa.length; i++) {
             if (pessoa[i] != null) {
                 System.out.print("Nome Completo: " + pessoa[i].getNome() + " " + pessoa[i].getSobrenome() + "\n");
-                System.out.print("Nome de referência: " + pessoa[i].getSobrenome().toUpperCase() + ", "
-                        + pessoa[i].getNome() + "\n");
+                System.out.print("Nome de referência: " + pessoa[i].getSobrenome() + ", "
+                        + pessoa[i].getNome().toUpperCase() + "\n");
                 System.out.print("Idade: " + pessoa[i].getIdade() + "\n");
-                System.out.print("Peso: " + pessoa[i].getPeso());
+                System.out.print("Peso: " + pessoa[i].getPeso() + "\n");
                 System.out.print("Altura: " + pessoa[i].getAltura() + "\n");
-                System.out.print("IMC: " + pessoa[i].getImc() + "\n");
                 pessoa[i].informaObesidade();
             }
         }
