@@ -99,8 +99,7 @@ public class Pessoa {
         }
     }
 
-    public int calculaIdade(Data dataNascimento)
-    {
+    public int calculaIdade(Data dataNascimento) {
         Integer anoNascimento = dataNascimento.getAno();
         Integer mesNascimento = dataNascimento.getMes();
         Integer diaNascimento = dataNascimento.getDia();
